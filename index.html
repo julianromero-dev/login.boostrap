@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-
+<body class="bg-light">
+        
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-sm" style="max-width: 400px; width: 100%;">
+            <div class="card-body">
+                <h3 class="card-tittle text-center mb-4">Iniciar Sesion</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="rememberCheck">
+                        <label class="form-check-label" for="rememberCheck">Recuerdame</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                <small class="text-muted">¿No tiene cuenta? <a href="#">Registrate</a></small>
+            </div>
+        </div>
+    </div>
+    <!--Bootsrap JS Bundle via CDN (incluye Popper)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.Bundle.min.js"></script>
 </body>
 </html>
