@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-
+<body class="bg-dark">
+        
+<div class="container min-vh-100 d-flex justify-content-center align-items-center py-5">
+        <div class="card shadow-sm" style="max-width: 400px; width: 100%;">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Formulario</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombres" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" id="nombres" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="fecha_nacimiento">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Repetir contraseña</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Repite tu contraseña">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Número de teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="+57">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <select class="form-select" id="sexo">
+                            <option selected>Selecciona una opción</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nacionalidad" class="form-label">Nacionalidad</label>
+                        <select class="form-select" id="nacionalidad">
+                            <option selected>Selecciona tu nacionalidad</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="usa">Estados Unidos</option>
+                            <option value="canada">Canadá</option>
+                            <option value="mexico">México</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
